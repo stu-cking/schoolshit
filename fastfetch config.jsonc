@@ -54,11 +54,6 @@
       "keyIcon": ""
     },
     {
-      "type": "de",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}DE{#38;2;13;205;205} 󰨇 {#38;2;203;30;209}》",
-      "keyIcon": "󰨇"
-    },
-    {
       "type": "locale",
       "key":"{#38;2;13;205;205}╎ {#38;2;203;30;209}Locale{#38;2;13;205;205}  {#38;2;203;30;209}》",
       "keyIcon": "",
@@ -87,21 +82,6 @@
       "keyIcon": ""
     },
     {
-      "type": "gpu",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}GPU{#38;2;13;205;205} 󰾲 {#38;2;203;30;209}》",
-      "format": "{1} {2} ({6}) [{4}]",
-      "keyIcon": "󰾲",
-      "driverSpecific": false,
-      "detectionMethod": "pci",
-      "temp": true,
-      "hideType": "Integrated",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-    }
-    },
-    {
       "type": "memory",
       "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}RAM{#38;2;13;205;205}  {#38;2;203;30;209}》",
       "format": "{used} {#magenta}/{#cyan} {total} [{percentage}]",
@@ -112,13 +92,6 @@
         "yellow": 80,
         "type": 0
                  }
-    },
-    {
-            "type": "display",
-            "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}Display{#38;2;13;205;205} 󰍹 {#38;2;203;30;209}》",
-            "keyIcon":"󰍹",
-            "keyColor": "",
-            "format": "{width}x{height} {#magenta}@{#cyan} {refresh-rate} Hz {#magenta}-{#cyan} {physical-width}x{physical-height} mm {inch} inches"
     },
     {
         "type": "custom",
