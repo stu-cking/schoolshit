@@ -17,7 +17,11 @@
             "output": "white"
                  },
         "separator": ""
-               },
+                },
+        "constants": [
+            "│\u001b[48C│\u001b[48D"
+        ]
+    },
     "modules": [
     {
       "type": "os",
@@ -27,13 +31,13 @@
     },
     {
       "type": "cpuusage",
-      "key": "{#white}│CPU │",
+      "key": "{#white}{$1}CPU │",
       "format": " [{1}]",
       "keyIcon": ""
     },
     {
       "type": "memory",
-      "key": "{#white}│RAM │",
+      "key": "{#white}{$1}RAM │",
       "format": " {used} {#magenta}/{#cyan} {total} [{percentage}]",
       "keyIcon": "",
       "temp": true,
@@ -52,13 +56,13 @@
         "type": 0
     },
       "keyIcon": "󰓡",
-      "key": "{#white}│Swap │",
+      "key": "{#white}{$1}Swap │",
       "separate": false
     },
 
     {
       "type": "disk",
-      "key": "{#white}│Disk │",
+      "key": "{#white}{$1}Disk │",
        "format": " {1} {#magenta}/{#cyan} {2} [{3}] {9} {mountpoint}",
       "keyIcon": "",
       "showRegular": true,
@@ -80,14 +84,13 @@
 
     {
       "type": "uptime",
-      "key": "{#white}│Uptime │",
+      "key": "{#white}{$1}Uptime │",
       "keyIcon": ""
     },
   ]
 }
 
 
-         kingtom@mint
 ╭──────────────────────────╮
 │OS    │                    │
 │CPU   │[]                  │
