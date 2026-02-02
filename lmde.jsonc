@@ -2,7 +2,7 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
       "type": "file",
-      "source": "/home/Maelstrom/Downloads/scriptsandshit/LMDEASCII.txt",
+      "source": "/home/Maelstrom/Downloads/scriptsandshit/MintASCII.txt",
       "color": {
             "1": "green",
             "2": "white",
@@ -29,21 +29,18 @@
     },
     {
       "type": "os",
-      "key": "{$1}OS │",
+      "key": "{$1}OS     │",
       "format": " {3}",
-      "keyIcon": ""
     },
     {
       "type": "cpuusage",
-      "key": "{#white}{$1}CPU │",
+      "key": "{#white}{$1}CPU    │",
       "format": " [{1}]",
-      "keyIcon": ""
     },
     {
       "type": "memory",
-      "key": "{#white}{$1}RAM │",
-      "format": " {used} {#magenta}/{#cyan} {total} [{percentage}]",
-      "keyIcon": "",
+      "key": "{#white}{$1}RAM    │",
+      "format": " {used} {#green}/{#white} {total} [{percentage}]",
       "temp": true,
       "percent": {
         "white": 50,
@@ -53,22 +50,19 @@
     },
     {
       "type": "swap",
-      "format": " {1} {#magenta}/{#cyan} {2} [{3}]",
+      "format": " {1} {#green}/{#white} {2} [{3}]",
       "percent": {
         "white": 50,
         "yellow": 80,
         "type": 0
     },
-      "keyIcon": "󰓡",
-      "key": "{#white}{$1}Swap │",
+      "key": "{#white}{$1}Swap   │",
       "separate": false
     },
-
     {
       "type": "disk",
-      "key": "{#white}{$1}Disk │",
-       "format": " {1} {#magenta}/{#cyan} {2} [{3}] {9} {mountpoint}",
-      "keyIcon": "",
+      "key": "{#white}{$1}Disk   │",
+       "format": " {1} {#green}/{#white} {2} [{3}] {9} {mountpoint}",
       "showRegular": true,
       "showExternal": true,
       "showHidden": false,
@@ -86,10 +80,15 @@
                  }
     },
 
+
+    {
+      "type": "",
+      "key": "{#white}{$1}IP │",
+(netio {3} for wifi?, wifi {1} {4} {5}?)
+    },
     {
       "type": "uptime",
       "key": "{#white}{$1}Uptime │",
-      "keyIcon": ""
     },
     {
       "type": "custom",
@@ -108,7 +107,7 @@
 │IP    │Wifi@IP             │
 │Uptime│                    │
 ╰──────────────────────────╯
-
+[kingtom@mint] # 
  __________
 |_          \
   | $2| _____ $1|
