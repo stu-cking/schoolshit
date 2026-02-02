@@ -24,6 +24,10 @@
     },
     "modules": [
     {
+      "type": "custom",
+      "format": "{#white}╭──────────────────────────────────────╮",
+    },
+    {
       "type": "os",
       "key": "│OS │",
       "format": " {3}",
@@ -86,6 +90,10 @@
       "type": "uptime",
       "key": "{#white}{$1}Uptime │",
       "keyIcon": ""
+    },
+    {
+      "type": "custom",
+      "format": "{#white}╰──────────────────────────────────────╯",
     },
   ]
 }
