@@ -1,188 +1,46 @@
-{
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-      "type": "auto",
-        "padding": {
-            "top": 1,
-            "left": 4
-            }
-        },
-    "display": {
-        "color": {
-            "output": "cyan"
-                 },
-        "separator": ""
-               },
-    "modules": [
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⌿ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ⍀"
-    },
-    {
-      "type": "title",
-            "format": "                          {#38;2;13;205;205}〔{user-name-colored}{#38;2;203;30;209}{at-symbol-colored}{#38;2;13;205;205}{host-name-colored}{#38;2;13;205;205} 〕",
-       "key": " ",
-      "keyIcon": "",
-    },
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⍀ˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍ⌿"
-    },
-      "break",
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⌿ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ{#38;2;203;30;209}OPERATING SYSTEM INFO{#38;2;13;205;205}ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ⍀"
-    },
-    {
-      "type": "os",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}OS{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "keyIcon": ""
-    },
-    {
-      "type": "kernel",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}Kernal{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "keyIcon": ""
-    },
-    {
-      "type": "shell",
-      "key":"{#38;2;13;205;205}╎ {#38;2;203;30;209}Shell{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "keyIcon": ""
-    },
-    {
-      "type": "terminal",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}Terminal{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "keyIcon": ""
-    },
-    {
-      "type": "locale",
-      "key":"{#38;2;13;205;205}╎ {#38;2;203;30;209}Locale{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "keyIcon": "",
-    },
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⍀ˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍ⌿"
-    },
-      "break",
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⌿ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ{#38;2;203;30;209}HARDWARE INFO{#38;2;13;205;205}ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ⍀"
-    },
-    {
-      "type": "cpu",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}CPU{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "format": "{1} ({5}) {#magenta}@{#cyan} {7} [{8}]",
-      "keyIcon": "",
-      "temp": true,
-      "showPeCoreCount": true
-    },
-    {
-      "type": "cpuusage",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}CPU{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "format": "Usage: [{1}]",
-      "keyIcon": ""
-    },
-    {
-      "type": "memory",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}RAM{#38;2;13;205;205}  {#38;2;203;30;209}》",
-      "format": "{used} {#magenta}/{#cyan} {total} [{percentage}]",
-      "keyIcon": "",
-      "temp": true,
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-                 }
-    },
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⍀ˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍ⌿"
-    },
-      "break",
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⌿ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ{#38;2;203;30;209}DISK INFO{#38;2;13;205;205}ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ⍀"
-    },
-    {
-      "type": "disk",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}Disk{#38;2;13;205;205}  {#38;2;203;30;209}》",
-       "format": "{1} {#magenta}/{#cyan} {2} [{3}] {9} {mountpoint}",
-      "keyIcon": "",
-      "showRegular": true,
-      "showExternal": true,
-      "showHidden": false,
-      "showSubvolumes": false,
-      "showReadOnly": true,
-      "showUnknown": false,
-      "folders": "",
-      "hideFolders": "/efi:/boot:/boot/*",
-      "hideFS": "",
-      "useAvailable": false,
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-                 }
-    },
-    {
-      "type": "swap",
-      "format": "{1} {#magenta}/{#cyan} {2} [{3}]",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-    },
-      "keyIcon": "󰓡",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}Swap{#38;2;13;205;205} 󰓡 {#38;2;203;30;209}》",
-      "separate": false
-    },
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⍀ˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍ⌿"
-    },
-    "break",
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⌿ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ⍀"
-    },
-    {
-      "type": "uptime",
-      "key": "{#38;2;13;205;205}╎ {#38;2;203;30;209}Uptime {#38;2;13;205;205} {#38;2;203;30;209}》",
-      "keyIcon": ""
-    },
-    {
-      "type": "custom",
-      "format": "{#38;2;13;205;205}╎ {#38;2;221;221;221}󰫈{#38;2;255;255;255} 󰫈{#38;2;13;205;205} 󰫈{#38;2;203;30;209} 󰫈{#38;2;13;115;204} 󰫈{#38;2;206;203;0} 󰫈{#38;2;25;203;0} 󰫈{#38;2;204;4;3} 󰫈",
-    },
-    {
-        "type": "custom",
-        "format": "{#38;2;13;205;205}⍀ˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍˍ⌿"
-    },
-  ]
-}
+                  mysssym
+                mysssym
+              mysssym
+            mysssym
+          mysssyp
+        mysssyp    N
+      mysssyp    mysym
+    mysssyp      dysssym
+  mysssyp          dysssym6
+mysssyd              bysssym
+mysssyd              bysssym
+mysssyd              bysssym
+  mysssyp          dysssym
+    mysssyp      dysssym
+      mysyp    dysssym
+        N    dysssym
+           dysssym
+         dysssym
+       dysssym
+     dysssym
+   dysssym
 
 
-                   $1-===========-
-             -=====================-
-          -===========================-
-        -===============================-
-      -===================================-
-    -=======================================-
-   -=====+=============================+=====-
-  -======$3@@@$1-=======================-$3@@@$1======-
--=======$3ooooo$1-===================-$3ooooo$1=======-
-========$3ooooooo$1-===============-$3ooooooo$1========
--========$3ooooooooo$1-===========-$3ooooooooo$1========-
-=========$3ooooooooooo$1-=======-$3ooooooooooo$1=========
-=========$3ooooo$2.$3ooooooo$1-===-$3ooooooo.ooooo$1=========
--========$3ooooo$2::.$3ooooooo$1+$3ooooooo$2.::$3ooooo$1========-
-========$3ooooo$2::::.$3ooooooooooo$2.::::$3ooooo$1========
- $3ooooooooooooo$2::::::.$3ooooooo$2.::::::$3ooooooooooooo
- $3ooooooooooooo$2::::::::.$3ooo$2.::::::::$3ooooooooooooo
-  $3oooooooooooo$2::::::::::.::::::::::$3oooooooooooo
-   $2...........:::::::::::::::::::::...........
-    *:::::::::::::::::::::::::::::::::::::::*
-      *:::::::::::::::::::::::::::::::::::*
-        *:::::::::::::::::::::::::::::::*
-          *:::::::::::::::::::::::::::*
-              *:::::::::::::::::::*
-                    *********
+                  mysssym
+                mysssym
+              mysssym
+            mysssym
+          mysssyp
+        mysssyp    N
+      mysssyp    mysym
+    mysssyp      dysssym
+  mysssyp          dysssym
+mysssyp              dysssym
+mysssyp              dysssym
+mysssyp              dysssym
+  mysssyp          dysssym
+    mysssyp      dysssym
+      mysyp    dysssym
+        N    dysssym
+           dysssym
+         dysssym
+       dysssym
+     dysssym
+   dysssym
+
+
